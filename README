@@ -1,0 +1,70 @@
+CPAN::Testers::Fact::PUseroContributed PerCPAN::Testers::Fact::PlatformInfo(3)
+
+
+
+NAME
+       CPAN::Testers::Fact::PlatformInfo - platform information on which a
+       CPAN Testers smoker is running
+
+VERSION
+       version 1.00
+
+SYNOPSIS
+         # assume $report is a hash of a test report created using a CPAN Testers
+         # smoker, which generates metadata for the platform.
+
+         my $fact = CPAN::Testers::Fact::PlatformInfo->new(
+           resource => 'cpan:///distfile/RJBS/CPAN-Metabase-Fact-0.001.tar.gz',
+           content     => {
+             osname        => $report->{platform_info}{osname}     ,
+             archname      => $report->{platform_info}{archname}   ,
+             osvers        => $report->{platform_info}{osvers}     ,
+             oslabel       => $report->{platform_info}{oslabel}    ,
+             is32bit       => $report->{platform_info}{is32bit}    ,
+             is64bit       => $report->{platform_info}{is64bit}    ,
+             osflag        => $report->{platform_info}{osflag}     ,
+             codename      => $report->{platform_info}{codename}   ,
+             kernel        => $report->{platform_info}{kernel}
+           },
+         );
+
+DESCRIPTION
+       Stores the platform information of the machine ruuning the CPAN Testers
+       smoker.
+
+METHODS
+       required_keys
+           All keys are optional, but here in case some become mandatory.
+
+       content_metadata
+           The metadata values accessor.
+
+       content_metadata_types
+           The metadata values descriptors.
+
+USAGE
+       See Metabase::Fact.
+
+BUGS
+       Please report any bugs or feature using the CPAN Request Tracker.  Bugs
+       can be submitted through the web interface at
+       <http://rt.cpan.org/Dist/Display.html?Queue=CPAN-Testers-Fact-PlatformInfo>
+
+       When submitting a bug or request, please include a test-file or a patch
+       to an existing test-file that illustrates the bug or desired feature.
+
+AUTHORS
+         Barbie (BARBIE) <barbie@cpan.org>
+         Brian McCauley (NOBULL) <nobull67@gmail.com>
+         Colin Newell http://colinnewell.wordpress.com/
+         Jon 'JJ' Allen (JONALLEN) <jj@jonallen.info>
+
+COPYRIGHT & LICENSE
+         Copyright (C) 2011 Birmingham Perl Mongers
+
+         This module is free software; you can redistribute it and/or
+         modify it under the Artistic License 2.0.
+
+
+
+perl v5.10.1                      2011-05-CPAN::Testers::Fact::PlatformInfo(3)
