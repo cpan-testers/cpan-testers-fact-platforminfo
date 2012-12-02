@@ -1,11 +1,11 @@
 --- #YAML:1.0
 name:                     CPAN-Testers-Fact-PlatformInfo
-version:                  1.00
-abstract:                 Platform information on which a CPAN Testers smoker is running.
+version:                  1.01
+abstract:                 Platform information on which a CPAN Testers smoker is running
 author:
   - Barbie (BARBIE) <barbie@cpan.org>
   - Brian McCauley (NOBULL) <nobull67@gmail.com>
-  - Colin Newell http://colinnewell.wordpress.com/
+  - Colin Newell (NEWELLC) http://colinnewell.wordpress.com/
   - Jon 'JJ' Allen (JONALLEN) <jj@jonallen.info>
 
 license:                  artistic_2
@@ -13,21 +13,22 @@ distribution_type:        module
 installdirs:              site
 
 requires:
+  perl:                   5.006
   Carp:                   0
   Metabase::Fact::Hash:   0.016
 recommends:
-  Test::More:             0.70
+  Test::CPAN::Meta:       0
+  Test::CPAN::Meta::JSON: 0
   Test::Pod:              1.00
   Test::Pod::Coverage:    0.08
-  Test::CPAN::Meta:       0.13
-  Test::CPAN::Meta::JSON: 0.10
 build_requires:
+  IO::File:               0
   Test::More:             0.70
 
 provides:
   CPAN::Testers::Fact::PlatformInfo:
     file:     lib/CPAN/Testers/Fact/PlatformInfo.pm
-    version:  1.00
+    version:  1.01
 
 no_index:
   directory:

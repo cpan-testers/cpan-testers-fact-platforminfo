@@ -3,7 +3,7 @@ use strict;
 use warnings;
 package CPAN::Testers::Fact::PlatformInfo;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 
 # ABSTRACT: platform information on which a CPAN Testers smoker is running.
 
@@ -55,7 +55,7 @@ CPAN::Testers::Fact::PlatformInfo - platform information on which a CPAN Testers
 
 =head1 VERSION
 
-version 1.00
+version 1.01
 
 =head1 SYNOPSIS
 
@@ -117,12 +117,12 @@ existing test-file that illustrates the bug or desired feature.
 
   Barbie (BARBIE) <barbie@cpan.org>
   Brian McCauley (NOBULL) <nobull67@gmail.com>
-  Colin Newell http://colinnewell.wordpress.com/
+  Colin Newell (NEWELLC) F<http://colinnewell.wordpress.com/>
   Jon 'JJ' Allen (JONALLEN) <jj@jonallen.info>
 
 =head1 COPYRIGHT & LICENSE
 
-  Copyright (C) 2011 Birmingham Perl Mongers
+  Copyright (C) 2011-2012 Birmingham Perl Mongers
 
   This module is free software; you can redistribute it and/or
   modify it under the Artistic License 2.0.
