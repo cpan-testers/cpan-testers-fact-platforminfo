@@ -1,5 +1,8 @@
 Revision history for Perl library CPAN-Testers-Fact-PlatformInfo
 ================================================================
 
-1.00    25/05/2011
+1.01    2012-12-02
+        - change file dates changed to meet W3CDTF standards.
+
+1.00    2011-05-25
         - initial release.
