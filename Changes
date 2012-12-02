@@ -10,6 +10,7 @@ Revision history for Perl library CPAN-Testers-Fact-PlatformInfo
         - META tests no longer require specific versions.
         - added Colin's PAUSE ID.
         - README rewritten.
+        - new test script to bring coverage to 100%.
 
 1.00    2011-05-25
         - initial release.

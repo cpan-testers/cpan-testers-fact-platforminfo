@@ -1,7 +1,7 @@
-use 5.006;
+package CPAN::Testers::Fact::PlatformInfo;
+
 use strict;
 use warnings;
-package CPAN::Testers::Fact::PlatformInfo;
 
 our $VERSION = '1.01';
 
@@ -12,8 +12,8 @@ use Carp ();
 use Metabase::Fact::Hash 0.016;
 our @ISA = qw/Metabase::Fact::Hash/;
 
-#sub required_keys { qw/archname osname osvers oslabel is32bit is64bit osflag codename kernel/ }
 sub required_keys { }   # all keys are optional
+sub optional_keys { qw/archname osname osvers oslabel is32bit is64bit osflag codename kernel/ }
 
 sub content_metadata {
   my ($self) = @_;
@@ -89,6 +89,10 @@ smoker.
 =item required_keys
 
 All keys are optional, but here in case some become mandatory.
+
+=item optional_keys
+
+Returns a list of theoptional keys.
 
 =item content_metadata
 
