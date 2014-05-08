@@ -8,7 +8,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     AUTHOR              => 'Barbie <barbie@cpan.org>',
-    NAME                => 'CPAN::Testers::Fact::PlatformInfo',
+    NAME                => 'CPAN-Testers-Fact-PlatformInfo',
     VERSION_FROM        => 'lib/CPAN/Testers/Fact/PlatformInfo.pm',
     ABSTRACT            => 'Platform information on which a CPAN Testers smoker is running',
     NO_META             => 1,
@@ -23,5 +23,5 @@ WriteMakefile(
         'IO::File'              => 0,
         'Test::More'            => '0.70'
 
-    },
+    }
 );
