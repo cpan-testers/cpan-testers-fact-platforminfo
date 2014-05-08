@@ -1,5 +1,6 @@
 Changes
 lib/CPAN/Testers/Fact/PlatformInfo.pm
+LICENSE
 Makefile.PL
 MANIFEST
 META.json

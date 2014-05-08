@@ -35,6 +35,7 @@ no_index:
     - t
 
 resources:
+  license:    http://www.perlfoundation.org/artistic_license_2_0
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=CPAN-Testers-Fact-PlatformInfo
   repository: git://github.com/barbie/cpan-testers-fact-platforminfo.git
 
