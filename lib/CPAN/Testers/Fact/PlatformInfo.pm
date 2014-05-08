@@ -126,9 +126,9 @@ existing test-file that illustrates the bug or desired feature.
 
 =head1 COPYRIGHT & LICENSE
 
-  Copyright (C) 2011-2012 Birmingham Perl Mongers
+  Copyright (C) 2011-2014 Birmingham Perl Mongers
 
-  This module is free software; you can redistribute it and/or
+  This distribution is free software; you can redistribute it and/or
   modify it under the Artistic License 2.0.
 
 =cut
