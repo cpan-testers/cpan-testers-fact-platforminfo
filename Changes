@@ -1,6 +1,7 @@
 Revision history for CPAN-Testers-Fact-PlatformInfo
 ===================================================
 
+1.03    2014-09-16
         - fixed license fields in META.json to be lists.
         - added homepage link to META files.
 

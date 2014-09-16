@@ -3,7 +3,7 @@ package CPAN::Testers::Fact::PlatformInfo;
 use strict;
 use warnings;
 
-our $VERSION = '1.02';
+our $VERSION = '1.03';
 
 # ABSTRACT: platform information on which a CPAN Testers smoker is running.
 
